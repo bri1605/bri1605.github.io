@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ирина Брыксина.Загадки</title>
+		<link rel="stylesheet" href="сайт/style.css">
+		<script>
+			function ask(){
+				var answer=document.getElementById("one").value;
+				var count=0;
+				if(answer=="Мальвина"){count==count+1}else{}
+				var answer=document.getElementById("two").value;
+				if(answer=="Ступа"||"ступа"){count==count+1}else{}
+					var answer=document.getElementById("three").value;
+				if(answer=="Чиполлино"){count==count+1}else{};
+				var answer=document.getElementById("four").value;
+				if(answer=="Гудвин"){count==count+1}else{};
+				alert("Вы ответили правильно на "+count +" загадок.");
+
+			};
+		</script>
+	</head>
+	<body>
+			<div id="header">
+				<a href="index.html">Главная</a><span>/</span>
+				<a href="#">Загадки</a><span>/</span>
+				<a href="namber.html">Угадайка</a>
+			</div>
+		<div id="content">		
+			<h1>Загадки</h1>
+			
+				<div id="box">
+
+					<p>
+						<i>Я загадала несколько загадок. Попробуй отгадать их.</i>
+					</p>
+					<p>Была она артисткой прекрасной, как звезда, от злого Карабаса сбежала навсегда.
+						
+					</p>
+					<input type="text" id="one"> </input>
+					<p>Как у Бабы у Яги нет совсем одной ноги, зато есть замечательный аппарат летательный. Какой?</p>
+					<input type="text" id="two"></input>
+					<p>Он в Италии родился, он своей семьёй гордился. Он не просто мальчик-лук, он надёжный, верный друг.</p>
+					<input type="text" id="three"></input>
+					<p>Мой вопрос совсем не трудный, он про город Изумрудный. Кто там был правитель славный? Кто там был волшебник главный?</p>
+					<input type="text" id="four"></input>
+					<br/>
+					<a href="#" onclick="ask();"> Ответить </a>
+				</div>	
+			</div>
+		</div>				 
+	</body>
+</html>									

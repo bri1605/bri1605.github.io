@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<script>
+function ask () {
+   
+
+   var namber=parseInt(Math.random()*100);
+   var game=1;
+   var win=false;
+   var answer=parseInt(prompt("Ходит 1 игрок"));
+   while(win!=true || game==1){
+   	 	if(namber==answer){
+   	 		alert("Победитель - игрок " + 1);
+   	 		win=true;
+   	 	}else if(answer<namber){
+   	 		alert("Увы! Это слишком мало.");
+   	 		answer=parseInt(prompt("Ходит 2 игрок"));
+   	 		game++
+   	 	}else if(answer>namber){
+   	 		alert("Увы! Но это слишкм мнго.");
+   	 		answer=parseInt(prompt("Ходит 2 игрок"));
+   	 		game++
+   	 	}
+
+   	}
+   	while(win!=true|| game==2){
+   		if(namber==answer){
+   	 		alert("Победитель - игрок " + 2);
+   	 		win=true;
+   	 	}else if(answer<namber){
+   	 		alert("Увы! Это слишком мало.");
+   	 		game==game-1
+   	 		answer=parseInt(prompt("Ходит 1 игрок"));
+   	 	}else if(answer>namber){
+   	 		alert("Увы! Но это слишкм мнго.");
+   	 		answer=parseInt(prompt("Ходит 1 игрок"));
+   	 		game==game-1
+   	 	}
+   	}
+   	alert("Игра завершена!!!")
+}      
+</script>
